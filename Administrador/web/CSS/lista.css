@@ -1,0 +1,62 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2; /* Cambiado el color de fondo para un tono más suave */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%; /* Aumentado el ancho del contenedor */
+    max-width: 800px; /* Limitado el ancho máximo */
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más suave y definida */
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Añadido espacio inferior al título */
+}
+
+/* Estilos de la lista de archivos */
+#file-list {
+    list-style: none;
+    padding: 0;
+}
+
+#file-list li {
+    background-color: #ffffff; /* Fondo blanco */
+    margin-bottom: 15px; /* Espaciado inferior mayor */
+    padding: 15px;
+    border-radius: 8px; /* Bordes más redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.file-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-name {
+    font-weight: bold;
+    color: #333;
+    flex: 1; /* Ocupa el espacio restante en la línea */
+}
+
+.file-size {
+    color: #666;
+    margin-left: 15px; /* Ajustado el espacio entre el nombre y el tamaño */
+    font-size: 14px; /* Tamaño de fuente ligeramente más pequeño */
+}
+
+/* Estilo al pasar el ratón sobre los elementos */
+#file-list li:hover {
+    background-color: #f2f2f2; /* Color de fondo más claro al pasar el ratón */
+    transform: scale(1.02); /* Escala ligeramente mayor */
+}
